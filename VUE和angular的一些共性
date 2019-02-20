@@ -1,0 +1,3 @@
+VUE				angular
+v-if			*ngIf
+v-for			*ngFor
