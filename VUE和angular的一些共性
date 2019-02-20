@@ -1,8 +1,8 @@
-VUE				                                angular
-v-if			                                *ngIf
-v-for="item in items"			                *ngForr="let hero of heroes"
+VUE				  angular
+v-if			            *ngIf
+v-for="item in items"		  *ngForr="let hero of heroes"
 v-on:click="fn()"                         (click)="fn()"
 v-bind:class="{ active: isActive }"       [class.selected]="flage == true"
-          
+                                          routerLink
           
 都支持模板语法:  <h1>{{title}}</h1>
