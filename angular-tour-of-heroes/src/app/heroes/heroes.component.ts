@@ -21,7 +21,9 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   };
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    // this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes()      //这是一个Observable对象
+      .subscribe(heroes => this.heroes = heroes);
   }
   constructor(private heroService: HeroService) {         
     //1. 声明了一个私有 heroService 属性，2. 把它标记为一个 HeroService 的注入点。
