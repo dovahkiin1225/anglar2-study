@@ -18,6 +18,11 @@ export class HeroService {
     // TODO: send the message _after_ fetching the heroes
     this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
+  } 
+  getHero(id: number): Observable<Hero> {
+    // TODO: send the message _after_ fetching the hero
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(HEROES.find(hero => hero.id === id));
   }
   // constructor() { }
   // 把 MessageService 注入到了 HeroService 中，而 HeroService 又被注入到了 HeroesComponent 中。

@@ -16,10 +16,10 @@ export class HeroesComponent implements OnInit {
   // };
   // heroes = HEROES;
   heroes: Hero[];
-  selectedHero: Hero;
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  };
+  // selectedHero: Hero;
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // };
   getHeroes(): void {
     // this.heroes = this.heroService.getHeroes();
     this.heroService.getHeroes()      //这是一个Observable对象
