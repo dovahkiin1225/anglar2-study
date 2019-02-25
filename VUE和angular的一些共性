@@ -6,3 +6,5 @@ v-bind:class="{ active: isActive }"       [class.selected]="flage == true"
                                           routerLink
           
 都支持模板语法:  <h1>{{title}}</h1>
+
+
